@@ -1,0 +1,58 @@
+{
+	"geode": "3.7.1",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "abb2k.custom_icon_size",
+	"name": "Custom icon size",
+	"version": "v1.0.0",
+	"tags": ["joke"],
+	"developer": "abb2k",
+	"description": "change the size your icons!",
+	"settings": {
+		"icon-size-overall":{
+			"type": "float",
+			"default": 1,
+			"min": 0,
+			"max": 10,
+			"controls": {
+				"slider": true
+			},
+			"name": "Overall size",
+			"description": "Changes the size of the icon (irrelevant if \"Split X & Y\" is on)"
+		},
+		"icon-size-extra-enabled":{
+			"type": "bool",
+			"default": false,
+			"name": "Split X & Y",
+			"description": "Whether to split the X & Y or not"
+		},
+		"icon-size-x":{
+			"type": "float",
+			"default": 1,
+			"min": 0,
+			"enable-if": "icon-size-extra-enabled",
+			"max": 10,
+			"controls": {
+				"slider": true
+			},
+			"name": "Scale X",
+			"description": "The scale of the icon on the X axis"
+		},
+		"icon-size-y":{
+			"type": "float",
+			"default": 1,
+			"min": 0,
+			"enable-if": "icon-size-extra-enabled",
+			"max": 10,
+			"controls": {
+				"slider": true
+			},
+			"name": "Scale Y",
+			"description": "The scale of the icon on the Y axis"
+		}
+	}
+}
