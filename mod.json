@@ -8,11 +8,17 @@
 	},
 	"id": "abb2k.custom_icon_size",
 	"name": "Custom icon size",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"tags": ["joke"],
 	"developer": "abb2k",
 	"description": "change the size your icons!",
 	"settings": {
+		"mod-enabled":{
+			"type": "bool",
+			"default": true,
+			"name": "Enable",
+			"description": "Enables/Disables the mod"
+		},
 		"icon-size-overall":{
 			"type": "float",
 			"default": 1,
@@ -22,7 +28,8 @@
 				"slider": true
 			},
 			"name": "Overall size",
-			"description": "Changes the size of the icon (irrelevant if \"Split X & Y\" is on)"
+			"description": "Changes the size of the icon (irrelevant if \"Split X & Y\" is on)",
+			"enable-if": "mod-enabled"
 		},
 		"icon-size-extra-enabled":{
 			"type": "bool",
@@ -34,7 +41,7 @@
 			"type": "float",
 			"default": 1,
 			"min": 0,
-			"enable-if": "icon-size-extra-enabled",
+			"enable-if": "mod-enabled && icon-size-extra-enabled",
 			"max": 10,
 			"controls": {
 				"slider": true
@@ -46,7 +53,7 @@
 			"type": "float",
 			"default": 1,
 			"min": 0,
-			"enable-if": "icon-size-extra-enabled",
+			"enable-if": "mod-enabled && icon-size-extra-enabled",
 			"max": 10,
 			"controls": {
 				"slider": true

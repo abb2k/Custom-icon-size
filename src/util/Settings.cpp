@@ -1,5 +1,9 @@
 #include "../util/Settings.hpp"
 
+bool Settings::getModEnabled(){
+    return Mod::get()->getSettingValue<bool>("mod-enabled");
+}
+
 float Settings::getIconScale(IconType icon){
     return Mod::get()->getSettingValue<double>(fmt::format("{}-size-overall", IconTypeToNameString(icon)));
 }

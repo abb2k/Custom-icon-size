@@ -4,6 +4,8 @@ using namespace geode::prelude;
 
 class Settings{
     public:
+        static bool getModEnabled();
+
         static float getOverallIconScale();
         static float getIconScale(IconType icon);
         static bool getIconExtraEnabled(IconType icon);
