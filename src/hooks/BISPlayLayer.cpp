@@ -29,8 +29,6 @@ void BISPlayLayer::myUpdate(float d){
             else
                 m_player1->m_mainLayer->setScaleY(Settings::getIconScaleY(IconType::Special));
         }
-
-        LevelEditorLayer
     }
 
     if (m_player2 != nullptr){
