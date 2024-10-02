@@ -1,3 +1,6 @@
+# 1.0.2
+- fixed issue with platformer player not flipping
+
 # 1.0.1
 - fixed the mod lol
 
