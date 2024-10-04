@@ -28,7 +28,11 @@ void BISPlayLayer::myUpdate(float d){
                 m_player1->m_mainLayer->setScaleY(Settings::getIconScale(IconType::Special));
         }
         else{
-            m_player1->m_mainLayer->setScaleX(Settings::getIconScaleX(IconType::Special));
+            if (m_fields->isFlippedP1)
+                m_player1->m_mainLayer->setScaleX(-Settings::getIconScaleX(IconType::Special));
+            else
+                m_player1->m_mainLayer->setScaleX(Settings::getIconScaleX(IconType::Special));
+
             if (m_fields->isNegativeP1)
                 m_player1->m_mainLayer->setScaleY(-Settings::getIconScaleY(IconType::Special));
             else
@@ -38,7 +42,7 @@ void BISPlayLayer::myUpdate(float d){
 
     if (m_player2 != nullptr){
         m_fields->isNegativeP2 = m_player2->m_mainLayer->getScaleY() < 0;
-        m_fields->isNegativeP2 = m_player2->m_mainLayer->getScaleX() < 0;
+        m_fields->isFlippedP2 = m_player2->m_mainLayer->getScaleX() < 0;
 
         if (!Settings::getIconExtraEnabled(IconType::Special)){
             if (m_fields->isFlippedP2)
@@ -52,7 +56,11 @@ void BISPlayLayer::myUpdate(float d){
                 m_player2->m_mainLayer->setScaleY(Settings::getIconScale(IconType::Special));
         }
         else{
-            m_player2->m_mainLayer->setScaleX(Settings::getIconScaleX(IconType::Special));
+            if (m_fields->isFlippedP2)
+                m_player2->m_mainLayer->setScaleX(-Settings::getIconScaleX(IconType::Special));
+            else
+                m_player2->m_mainLayer->setScaleX(Settings::getIconScaleX(IconType::Special));
+
             if (m_fields->isNegativeP2)
                 m_player2->m_mainLayer->setScaleY(-Settings::getIconScaleY(IconType::Special));
             else

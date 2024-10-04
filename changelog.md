@@ -1,3 +1,6 @@
+# 1.0.3
+- fixed some more rotation related bugs
+
 # 1.0.2
 - fixed issue with platformer player not flipping
 
