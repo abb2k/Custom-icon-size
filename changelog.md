@@ -1,3 +1,6 @@
+# 1.0.4
+- updated the mod for geode v4.0.0
+
 # 1.0.3
 - fixed some more rotation related bugs
 
