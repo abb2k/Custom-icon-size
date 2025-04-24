@@ -1,5 +1,5 @@
 {
-	"geode": "4.0.0-beta.1",
+	"geode": "4.3.1",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -11,7 +11,7 @@
 	"version": "v1.0.5",
 	"tags": ["joke"],
 	"developer": "abb2k",
-	"description": "change the size your icons!",
+	"description": "change the size of your icons!",
 	"settings": {
 		"mod-enabled":{
 			"type": "bool",
