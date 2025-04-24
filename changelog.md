@@ -1,3 +1,6 @@
+# 1.0.6
+- iOS support
+
 # 1.0.5
 - updated the mod for geode v4.0.0-beta.1
 
