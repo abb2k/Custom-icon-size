@@ -1,3 +1,6 @@
+# 1.0.7
+- reupload mod to attempt fixing update issue
+
 # 1.0.6
 - iOS support
 
