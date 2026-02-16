@@ -1,14 +1,14 @@
 {
-	"geode": "4.4.0",
+	"geode": "5.0.0-beta.2",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "abb2k.custom_icon_size",
 	"name": "Custom icon size",
-	"version": "v1.0.7",
+	"version": "v1.0.8",
 	"tags": ["joke"],
 	"developer": "abb2k",
 	"description": "change the size of your icons!",
@@ -24,7 +24,7 @@
 			"default": 1,
 			"min": 0,
 			"max": 10,
-			"controls": {
+			"control": {
 				"slider": true
 			},
 			"name": "Overall size",
@@ -43,7 +43,7 @@
 			"min": 0,
 			"enable-if": "mod-enabled && icon-size-extra-enabled",
 			"max": 10,
-			"controls": {
+			"control": {
 				"slider": true
 			},
 			"name": "Scale X",
@@ -55,7 +55,7 @@
 			"min": 0,
 			"enable-if": "mod-enabled && icon-size-extra-enabled",
 			"max": 10,
-			"controls": {
+			"control": {
 				"slider": true
 			},
 			"name": "Scale Y",
