@@ -1,5 +1,8 @@
-# 1.0.8
+# 1.0.9
 - updated for geode V5
+
+# 1.0.8
+- updated for geode V5 beta
 
 # 1.0.7
 - reupload mod to attempt fixing update issue
